@@ -1,0 +1,11 @@
+
+
+<h2>Equipo : {{nombre}} </h2>
+
+<h3>Jugadores:</h3>
+<ul>
+    <player (id)="borrarPlayer($event)" 
+     (mifavorito)="favorito($event)" 
+     (prioridad)="prioridad($event)"
+     [jugador]="p"  *ngFor="let p of jugadores"></player>
+</ul>
